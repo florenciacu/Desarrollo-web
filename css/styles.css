@@ -8,7 +8,12 @@ header {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
+.flex {
+    display: flex;
+}
+
 img {
     max-width: 100%;
 }
@@ -51,7 +56,9 @@ h2{
     font-size: 35px;
     font-weight: bolder;
 }
-
+h3{
+    font-size: 18px;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -110,4 +117,67 @@ margin-top: 30px;
 }
 .bi-facebook{
     color: blue;
+}
+.container1 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.container1 p {
+    
+    text-align: center;
+    margin: 30px;
+
+}
+.bg-red-100{
+    opacity: 1;
+    background-color: rgb(234, 215, 223);
+    
+}
+.bg-green-100{
+    opacity: 1;
+    background-color: rgb(215, 234, 215);
+}
+.rounded-md {
+    border-radius: 8px;
+}
+.items-center {
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    line-height: inherit;
+}
+html{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.bi-bookmark-heart {
+    color: rgb(216, 98, 137);
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.bi-arrow-right {
+    color: black;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    align-items: center;
+}
+.bi-calendar-heart{
+    color: green;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    text-align: center;
+    align-items: center;
 }
