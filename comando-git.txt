@@ -1,0 +1,25 @@
+Cuando quieran ignorar in archivo o carpeta, asegurensen se no haberlo incluido en nuingun git add
+
+Comandos basicos de git
+
+1.git init
+este comando inicia o activa git en nuestro proyecto
+2. git add .  (que guarde todos los archivos nuevos que detecte)
+3. git status 
+4. git commit -m "mensajeinidcativo del cambio que hicimos hasta ese momento"
+
+5.git log (genera un historial completo)
+
+6.git log --oneline (genera un historial resumido)
+
+7.git branch (consulta las ramas disponibles)
+
+8.git branch nombrecualquiera (crea una rama con el nombrequele asigne)
+
+9.git checkout nombrerama(sirve para moverse entre ramas)
+
+10.git merge nombrerama (fusiona los cambios de una rama dentro de la rama principal)
+tener en cuanta que para hacer el merge: 
+A. la rama no debe tener add ni commits pendientes
+B.Debemos movernos a la rama principal, pues la fusion o merge nofunciona desde una rama
+11. PARA SUBIR A GITHUB SIEMPRE DEBE ESTAR EL ARBOL DE TRABAJO LIMPIO. HABIENDO HECHO EL GIT COMMIT.
