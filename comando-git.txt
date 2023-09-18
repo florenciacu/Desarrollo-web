@@ -22,4 +22,8 @@ este comando inicia o activa git en nuestro proyecto
 tener en cuanta que para hacer el merge: 
 A. la rama no debe tener add ni commits pendientes
 B.Debemos movernos a la rama principal, pues la fusion o merge nofunciona desde una rama
-11. PARA SUBIR A GITHUB SIEMPRE DEBE ESTAR EL ARBOL DE TRABAJO LIMPIO. HABIENDO HECHO EL GIT COMMIT.
+11. PARA SUBIR A GITHUB SIEMPRE DEBE ESTAR EL ARBOL DE TRABAJO LIMPIO. HABIENDO HECHO EL GIT COMMIT.\
+
+12. el comando git remote add +link y el comando git push -u origin main solo se hacenla primera vez que se sube el repo.
+
+13.luego modificar futuroa solo commit y git push.
