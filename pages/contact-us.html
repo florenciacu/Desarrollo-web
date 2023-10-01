@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="../1Pre-entrega/img/estatua tulum.jpg" type="image/x-icon">
 
     <!--Archivo css-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!--Google font Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,23 +35,23 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand text-uppercase ms-2" href="../index.html">Serendipity</a>
+            <a class="navbar-brand ms-2" href="../index.html">Serendipity</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase" href="../pages/thingsto-do.html">Things to do</a>
+                    <a class="nav-link text-uppercase" href="thingsto-do.html">Things to do</a>
                 </li>
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase" aria-current="page" href="../pages/nightlife.html">Nightlife</a>
+                    <a class="nav-link text-uppercase" aria-current="page" href="nightlife.html">Nightlife</a>
                 </li>
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase" aria-current="page" href="../pages/yacht-rental.html">Yacht rental</a>
+                    <a class="nav-link text-uppercase" aria-current="page" href="yacht-rental.html">Yacht rental</a>
                 </li>
                 <li class="nav-item px-2 py-2">
-                    <a class="nav-link active text-uppercase" aria-current="page" href="/pages/contact-us.html">Contact us</a>
+                    <a class="nav-link active text-uppercase" aria-current="page" href="contact-us.html">Contact us</a>
                 </li>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -60,69 +60,88 @@
         </div>
         </div>
     </nav>
-    <header>
-    <div>
-        <h1>Serendipy Tulum</h1>
-    </div>
-        
-    <section id="content">
-        <article class="titulo">
-            <h2>Contact us</h2>
-        <p> texto del articulo</p>
-        </article>
+    <section class="contact">
+        <div class="content">
+            <h2>About us</h2>
+            <P>At Serendipity Tulum, we are driven by our commitment to support the local community and preserve Tulum's natural wonders. A portion of our proceeds goes directly to local charities and organizations, uplifting lives in and around Tulum.</P>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box"></div>
+                    <div class="text">
+                        <h3 class="text-center text-white">Contact us</h3>
+                        <P></P>
+                </div>
+            </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                    <span>Type your message</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" required="Send">
+                </div>
+                </form>
+            </div>
+    </section>
     </header>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4 px-5 py-5 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Full name</label>
-        <input type="text" class="form-control" id="name" placeholder="name">
-      </div>
-      
-      <div class="row row-cols-1 row-cols-md-3 g-4 px-5 py-5 mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-        <form>
-            <div>
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre">
+<footer>
+    <div class="container-fluid">
+        <div class="row p-5 pb-2 bg-dark text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Serendipity Tulum
+                </p> <p class=" p-2">We strive to give you the best, most memorable Tulum experience possible, so you can make the most of your journey and discover this amazing place!</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Company</p>
+                <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Home</a>
+            </div>
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">About us</a>
+                </div>
+                </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Service</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Things to do</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Nightlife</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Yacht rental</a>
+                    </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">About</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Contac us</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Terms & Conditions</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacy policy</a>
+                </div>
+            </div>
+            <div class="col-xs-12 pt-4">
+                <p class="text-white text-center">Copyright - All rights reserved @2023</p>
+            </div>
         </div>
-        <div>
-            <label for="telefono">Numero de telefono</label>
-            <input type="tel" name="" id="telefono">
-        </div>
-        <div>
-            <label for="correo">Correo electronico</label>
-            <input type="email" name="" id="correo">
-        </div>
-        <div>
-            <label for="mensaje">Dejanos tu comentario</label>
-            <textarea id="mensaje" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Limpia el formulario">
-        </div>
-        </form>
-    </section>
-    
-    <footer>
-        <h3 class="d-flex justify-content-center p-5"> FOLLOW US</h3>
-
-        <div class="network d-flex justify-content-center">
-            <a href="https://www.instagram.com/?hl=en" target="_blank" class="me-5">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" class="me-5">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" >
-                <i class="bi bi-youtube"></i>
-            </a>
-        </div>
-        <section>
-    <div>
-        <p class="rem text-center">Todos los derechos reservados</p>
+        
     </div>
 </footer>
 </div>
