@@ -13,6 +13,8 @@ h1{
     font-size: 50px;
     font-weight: bold;
     font-family: 'Croissant One', cursive;
+    color: #37423D;
+    
 }
 h2{
     font-size: 35px;
@@ -20,11 +22,12 @@ h2{
     text-align: center;
 }
 h3{
-    font-size: 30px;
+    font-size: 35px;
 }
 h4{
     font-size: 24px;
     font-weight:300;
+    color: #37423D;
 }
 img{
     max-width: 100%;
@@ -32,21 +35,26 @@ img{
 .navbar-brand{
     font-family: 'Croissant One', cursive;
     font-size: 26px;
+    color: white;
+}
+.navbar-brand:hover{
+    color:#BEB7A4;
 }
 
 .btn{
-    color: black;
-    border-color:rgb(193, 156, 83);
+    color: #37423D;
+    border-color:#37423D;
+    background-color: #BEB7A4;
 }
 
 body {
     margin: 0;
     line-height: inherit;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(250, 245, 238);
+    background-color: #BEB7A4;
 }
 nav{
-    background-color:rgb(248, 226, 196);
+    background-color:#37423D;
 }
 
 .flex {
@@ -56,7 +64,7 @@ nav{
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 .nav-link:hover{
-    color: rgb(107, 103, 103) !important;
+    color: #BEB7A4 !important;
 }
 
 .nav-link {
@@ -72,6 +80,7 @@ nav{
     height: 500px;
     width: 100%;
     z-index: 0;
+    margin-top:-200px;
 }
 
 #portada p{
@@ -95,6 +104,8 @@ nav{
     }
 }
 
+/*CARDS DEL INDEX*/
+
 #collection .container {
     display: flex;
     flex-direction: row;
@@ -108,6 +119,7 @@ nav{
     margin: auto;
     position: relative;
     border-radius: 8px;
+    
 }
 
 .container .box .imgbox{
@@ -121,18 +133,22 @@ nav{
     max-width: 100%;
     transition: transform 2s;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .imgbox h3{
 text-align: center;
 margin-top: 30px;
 justify-content: center;
-border-radius: 8px;
-font-size: 20px;
+font-size: 24px;
 padding-bottom: 30px;
+color: white;
+font-weight: 700;
+letter-spacing: 1px;
 }
 .container .box:hover .imgbox img{
     transform: scale(1.2);
     border-radius: 8px;
+    
 }
 @media (min-width:768px){
     .container{
@@ -163,15 +179,17 @@ padding-bottom: 30px;
     color: blue;
 }
 
+
+/*CONTACTS*/
+
 .contact {
     position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    background: url(../img/blog2.jpg);
     background-size: cover;
     
 }
@@ -203,11 +221,12 @@ padding-bottom: 30px;
 }
 
 .contactForm {
-    width: 60%;
-    padding: 40px;
-    background: rgb(33, 235, 164);
+    width: 50%;
+    padding: 60px;
+    background: #37423D;
     box-shadow: 0 3px 9px 3px rgba(0, 0.1, 0.1, 0.1);
-    border-radius: 8px;
+    border-radius: 24px;
+    margin-top: -90px;
 }
 .contactForm h2{
     font-size: 30px;
@@ -244,13 +263,13 @@ padding-bottom: 30px;
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span {
-    color: aqua;
+    color:antiquewhite;
 font-size: 12px;
 transform: translateY(-20px);
 }
 .contactForm .inputBox input [type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background: antiquewhite;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -273,7 +292,7 @@ transform: translateY(-20px);
     }
 }
 
-//NIGHTLIFE
+/*NIGHTLIFE*/
 
 .container {
     width: 100%;
@@ -281,6 +300,21 @@ transform: translateY(-20px);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 100px;
+}
+@media (min-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .item-container {
@@ -290,8 +324,9 @@ transform: translateY(-20px);
     height: 550px;
     overflow: hidden;
     background-color: black;
-    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .item-container .body-container {
@@ -311,7 +346,7 @@ transform: translateY(-20px);
     position: relative;
     width: 100%;
     height: 400px;
-    background-color: rgb(210, 186, 137);
+    background-color:#37423D;
     opacity: 0;
     transition: height linear 0.4s, opacity linear 0.2s;
 }
@@ -333,7 +368,7 @@ transform: translateY(-20px);
 }
 
 .title, .price {
-    color: rgb(0, 0, 0);
+    color: #37423D;
     font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 0.1px;
@@ -373,7 +408,7 @@ transform: translateY(-20px);
     color: #fff;
 border: 3px solid #fff;
 background-color: transparent;
-position: absolute;
+position:absolute;
 top: -100px;
 left: 50%;
 transform: translateX(-50%);
@@ -386,6 +421,7 @@ font-size: 1.3em;
 font-weight: bold;
 letter-spacing: 2px;
 transition: background-color 0.4s, top 0.4s;
+text-align: center;
 }
 
 .item-container:hover .action{
@@ -393,5 +429,50 @@ transition: background-color 0.4s, top 0.4s;
 }
 
 .action:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color:#BEB7A4;
+}
+
+/*Things to do*/
+.row{
+    height: auto;
+    width: auto;
+}
+
+
+
+
+/*yachtrental*/
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+    
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin-bottom: 26px;
+    padding: auto;
+    height: 400px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 24px;
+    width: 120px;
+    background-color: #37423D;
+    color: #fff;
+    font-weight: 600;
+    padding: 16px;
+}
+.btn-primary:hover{
+    background-color: #BEB7A4;
+    border-color: #3A2618;
+}
+h3,h5{
+    color:#010101;
 }
