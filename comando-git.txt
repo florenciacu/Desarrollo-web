@@ -27,3 +27,19 @@ B.Debemos movernos a la rama principal, pues la fusion o merge nofunciona desde 
 12. el comando git remote add +link y el comando git push -u origin main solo se hacenla primera vez que se sube el repo.
 
 13.luego modificar futuroa solo commit y git push.
+
+
+git remote add origin https://github.com/florenciacu/3pre-entrega-final.git
+git branch -M main
+git push -u origin main
+
+
+SI ES NUEVO:
+
+echo "# 3pre-entrega-final" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/florenciacu/3pre-entrega-final.git
+git push -u origin main
