@@ -1,0 +1,20 @@
+.cards-things{
+    padding: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+@media (min-width:768px){
+    .cards-things{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width:992px){
+    .cards-things{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

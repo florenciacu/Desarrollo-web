@@ -41,5 +41,11 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/florenciacu/3pre-entrega-final.git
+git remote add origin https://github.com/florenciacu/Desarrollo-web-Florencia-Acu-a
 git push -u origin main
+
+SASS
+1.git init
+2.enter hasta el yes, poner yes.
+3.npm install -g sass
+4.sass --watch scss:css
