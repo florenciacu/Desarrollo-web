@@ -1,6 +1,6 @@
-*{ 
+*{
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -19,18 +19,25 @@ h1{
     
 }
 h2{
-    font-size: 35px;
-    font: weight 600px;
+    font-size: 30px;
+    margin-bottom: 80px;
     text-align: center;
+    margin-top: auto;
 }
 h3{
-    font-size: 35px;
+    font-size: 24px;
 }
 h4{
-    font-size: 24px;
+    font-size: 20px;
     font-weight:300;
     color: $color-primario;
     justify-content: center;
+}
+h5{
+    font-size: 36px;
+}
+p{
+    font-size: 16px;
 }
 img{
     max-width: 100%;
@@ -44,11 +51,6 @@ img{
     color:$color-secundario;
 }
 
-.btn{
-    color: $color-primario;
-    border-color:$color-primario;
-    background-color:$color-secundario;
-}
 
 body {
     margin: 0;
@@ -76,7 +78,7 @@ nav{
 }
 
 .bi {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .bi-instagram {
@@ -88,3 +90,89 @@ nav{
 .bi-facebook{
     color: blue;
 }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.conatiner{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.footer{
+    background-color: rgb(45, 45, 45);
+    padding: 80px 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+    padding-left: 100px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #BEB7A4;
+    padding-bottom: 10px;
+    display: inline-block;
+    list-style: none;
+}
+.footer-links ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    margin-top: 10px;
+    transition: all .3s ease;
+    list-style: none;
+}
+.footer-links ul li a:hover{
+    color: antiquewhite;
+    padding-left: 6px;
+    list-style: none;
+
+}
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+    list-style: none;
+}
+
+.social-link a:hover{
+    background-color: antiquewhite;
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left:15px;;
+    }
+}
+
+.list-style-none{
+    list-style: none;
+    display:inline;
+}
+

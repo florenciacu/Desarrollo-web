@@ -20,20 +20,29 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
-  font: weight 600px;
+  font-size: 30px;
+  margin-bottom: 80px;
   text-align: center;
+  margin-top: auto;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   color: #37423D;
   justify-content: center;
+}
+
+h5 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
 }
 
 img {
@@ -48,12 +57,6 @@ img {
 
 .navbar-brand:hover {
   color: #BEB7A4;
-}
-
-.btn {
-  color: #37423D;
-  border-color: #37423D;
-  background-color: #BEB7A4;
 }
 
 body {
@@ -85,7 +88,7 @@ nav {
 }
 
 .bi {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .bi-instagram {
@@ -98,6 +101,96 @@ nav {
 
 .bi-facebook {
   color: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conatiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: rgb(45, 45, 45);
+  padding: 80px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+  padding-left: 100px;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #BEB7A4;
+  padding-bottom: 10px;
+  display: inline-block;
+  list-style: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+
+.footer-links ul li a:hover {
+  color: antiquewhite;
+  padding-left: 6px;
+  list-style: none;
+}
+
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+  list-style: none;
+}
+
+.social-link a:hover {
+  background-color: antiquewhite;
+}
+
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+  }
+}
+.list-style-none {
+  list-style: none;
+  display: inline;
 }
 
 #portada {
@@ -113,51 +206,60 @@ nav {
 
 #portada h1 {
   text-align: center;
-  font-size: 50px;
   font-weight: bold;
   font-family: "Croissant One", cursive;
   color: #37423D;
   justify-content: center;
   text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
 }
 
 @media (min-width: 520px) {
   #portada {
-    height: 50vh;
+    height: 30vh;
+  }
+  #portada h1 {
+    font-size: 40px;
   }
 }
 @media (min-width: 768px) {
   #portada {
     height: 70vh;
   }
+  #portada h1 {
+    font-size: 50px;
+  }
 }
 @media (min-width: 1024px) {
   #portada {
     height: 80vh;
   }
+  #portada h1 {
+    font-size: 60px;
+  }
 }
 /*CARDS DEL INDEX*/
-#collection .container-fluid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+#collection .card-index {
+  display: grid;
   justify-content: center;
+  align-items: center;
+  grid-column: auto;
   margin: auto;
 }
-#collection .container-fluid .box {
+#collection .card-index .box {
   box-sizing: border-box;
   display: inline-block;
   margin: auto;
   position: relative;
   border-radius: 8px;
 }
-#collection .container-fluid .imgbox {
+#collection .card-index .imgbox {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
 }
-#collection .container-fluid img {
+#collection .card-index img {
   height: 250px;
   width: 350px;
   max-width: 100%;
@@ -170,7 +272,7 @@ nav {
   text-align: center;
   margin-top: 30px;
   justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
   padding: 20px;
   margin: 20px;
   color: #37423D;
@@ -181,25 +283,29 @@ nav {
 .container-fluid .box:hover .imgbox img {
   transform: scale(1.2);
   border-radius: 8px;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .card-index {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 30px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1018px) {
   .card-index {
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 }
 .cards-things {
-  padding: auto;
-  margin-bottom: 100px;
+  padding-bottom: 150px;
   margin-top: 100px;
+}
+
+.col {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
@@ -207,47 +313,66 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 30px;
+    gap: 20px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1150px) {
   .cards-things {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
   }
 }
 .container {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
   margin: 50px;
 }
 
 .card-night {
   margin-bottom: 100px;
   margin-top: 50px;
+  margin: auto;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .card-night {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 30px;
+  }
+  .item-container {
+    position: relative;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-left: 18px;
+    height: 515px;
+    width: 320px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    cursor: pointer;
+    border-radius: 20px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1016px) {
   .card-night {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 .item-container {
   position: relative;
-  margin: 24px;
-  width: 320px;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-left: 18px;
   height: 515px;
+  width: 320px;
   overflow: hidden;
   background-color: black;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -272,8 +397,8 @@ nav {
 
 .overlay {
   position: relative;
-  width: 100%;
   height: 400px;
+  width: 100%;
   background-color: #37423D;
   opacity: 0;
   transition: height linear 0.4s, opacity linear 0.2s;
@@ -287,12 +412,12 @@ nav {
 .event-info {
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 8px;
-  width: auto;
   height: 480px;
+  width: auto;
 }
 
 .title, .price {
@@ -363,21 +488,39 @@ nav {
   background-color: #BEB7A4;
 }
 
-/*yachtrental*/
+h3 {
+  color: #37423D;
+}
+
+.cuerpo {
+  padding-bottom: 200px;
+}
+
 .card-img-top {
   border-radius: 50px;
   padding: 20px;
+  height: 240px;
+  width: 400px;
 }
 
 .card {
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   margin: auto;
+  padding: auto;
+}
+
+.card-title {
+  font-weight: 500;
+  align-content: center;
+  align-items: center;
 }
 
 .card-body {
   padding: 25px;
   margin-top: -15px;
+  align-content: center;
+  align-items: center;
 }
 
 .btn-primary {
@@ -404,13 +547,6 @@ nav {
   border-color: #37423D;
 }
 
-h2 {
-  color: black;
-  margin-bottom: 80px;
-  text-align: center;
-  margin-top: auto;
-}
-
 h1 {
   text-align: center;
   justify-content: center;
@@ -419,8 +555,8 @@ h1 {
 
 h5 {
   color: black;
-  margin-bottom: 80px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 p {
@@ -431,13 +567,13 @@ p {
 
 /*CONTACTS*/
 .contact {
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
   background-size: cover;
   margin-top: 40px;
 }
@@ -446,11 +582,6 @@ p {
   text-align: center;
   margin-top: -40px;
 }
-.contact h2 {
-  font-size: 36px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-}
 .contact p {
   font-weight: 400;
   font-size: 20px;
@@ -458,15 +589,17 @@ p {
 }
 
 .container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-top: 100px;
 }
 .container .contactInfo {
   width: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -479,7 +612,7 @@ p {
   margin-top: -90px;
 }
 .contactForm h2 {
-  font-size: 36px;
+  font-size: 40px;
   color: rgb(255, 255, 255);
   font-weight: 500;
 }
@@ -500,10 +633,20 @@ p {
   color: #666;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.contactForm .inputBox input {
   width: 100%;
   padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 50px;
   font-size: 16px;
   margin: 10px 0;
   border: none;
@@ -523,7 +666,7 @@ p {
 
 .contactForm .inputBox input [type=submit] {
   width: 100px;
-  background: white;
+  background-color: #666;
   color: white;
   border: none;
   cursor: pointer;
@@ -545,6 +688,14 @@ p {
   .contactForm {
     width: 100%;
   }
+}
+.btn {
+  background-color: #BEB7A4;
+  color: white;
+}
+.btn :hover {
+  background-color: #BEB7A4;
+  border-color: #37423D;
 }
 
 /*# sourceMappingURL=styles.css.map */

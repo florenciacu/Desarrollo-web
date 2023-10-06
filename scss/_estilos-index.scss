@@ -11,40 +11,50 @@
 
 #portada h1{
     text-align: center;
-    font-size: 50px;
     font-weight: bold;
     font-family: $fuente-secundaria;
     color:$color-primario;
     justify-content: center;
     text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
 }
 
 
 
 @media (min-width:520px) {
     #portada {
-        height: 50vh;
+        height: 30vh;
+        h1{font-size: 40px;
+            
+        }
     }
-}
+    }
+
 @media (min-width:768px) {
     #portada {
         height: 70vh;
+        h1{font-size: 50px;
+            
+        }
     }
 }
 @media (min-width:1024px) {
     #portada {
         height: 80vh;
+        h1{font-size: 60px;
+            
+        }
     }
 }
 
 /*CARDS DEL INDEX*/
 
-#collection .container-fluid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#collection .card-index {
+    display:grid;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    grid-column: auto;
     margin: auto;
 .box{
     box-sizing: border-box;
@@ -61,8 +71,7 @@
     border-radius: 8px;
 }
 & img{
-    height: 250px;
-    width: 350px;
+    @include sizes(350px, 250px);
     max-width: 100%;
     transition: transform 2s;
     border-radius: 8px;
@@ -73,7 +82,7 @@
 text-align: center;
 margin-top: 30px;
 justify-content: center;
-font-size: 24px;
+font-size: 30px;
 padding:20px;
 margin: 20px;
 color: $color-primario;
@@ -83,19 +92,20 @@ letter-spacing: 1px;
 .container-fluid .box:hover .imgbox img{
     transform: scale(1.2);
     border-radius: 8px;
+    justify-content: center;
     
 }
-@media (min-width:768px){
+@media (min-width:720px){
     .card-index{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        gap: 30px;
     }
 }
 
-@media (min-width:992px){
+@media (min-width:1018px){
     .card-index{
         grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 }
