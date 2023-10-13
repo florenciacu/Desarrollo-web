@@ -10,6 +10,11 @@
     width: 100%;
     justify-content: center;
 }
+.item-container{
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 8px;
+    @include sizes(300px,515px);}
 
 @media (min-width:750px){
     .card-night{
