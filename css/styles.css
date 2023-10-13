@@ -128,7 +128,6 @@ nav {
 .footer-links {
   width: 25%;
   padding: 0 15px;
-  padding-left: 100px;
 }
 
 .footer-links h4 {
@@ -339,6 +338,15 @@ nav {
   margin-top: 50px;
   margin: auto;
   width: 100%;
+  justify-content: center;
+}
+
+.item-container {
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 8px;
+  height: 515px;
+  width: 300px;
 }
 
 @media (min-width: 750px) {
@@ -353,7 +361,7 @@ nav {
     margin-bottom: 50px;
     margin-left: 18px;
     height: 515px;
-    width: 320px;
+    width: 300px;
     overflow: hidden;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -506,8 +514,8 @@ h3 {
 .card {
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  margin: auto;
   padding: auto;
+  margin: auto;
 }
 
 .card-title {
